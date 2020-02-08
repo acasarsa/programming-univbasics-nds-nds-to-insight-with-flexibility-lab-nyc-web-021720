@@ -75,10 +75,10 @@ def gross_per_studio(collection)
   while studio_index < collection.size do
     studio_name = collection[studio_index][:studio]
     totals[studio_name] = 0
-    studio_gross = collection[studio_index]
+    studio_gross = collection[studio_index][:worldwide_gross]
 
     gross_index = 0
-    while gross_index < studio_gross.size do
+    while gross_index < collection.size do
       totals[studio_name] += studio_gross[gross_index][:worldwide_gross]
       gross_index += 1
     end
@@ -89,6 +89,10 @@ def gross_per_studio(collection)
   totals
 end
   #
+# collection => 
+# [{:title=>"Movie A", :studio=>"Alpha Films", :worldwide_gross=>10},
+#  {:title=>"Movie B", :studio=>"Alpha Films", :worldwide_gross=>30},
+#  {:title=>"Movie C", :studio=>"Omega Films", :worldwide_gross=>30}]
   # name_index = 0
   #   while name_index < collection.length do
   #
