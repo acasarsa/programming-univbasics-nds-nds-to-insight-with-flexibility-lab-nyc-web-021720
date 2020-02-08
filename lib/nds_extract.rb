@@ -69,7 +69,25 @@ end
 
 
 def gross_per_studio(collection)
+  result = {}
 
+  name_index = 0
+    while name_index < collection.length do
+
+      director_name = collection[name_index][:name]
+      result[director_name] = 0 # accessing via key value pair. matched it with resuult and set variable in [] to equal 0 (for now)
+      movies_array = nds[name_index][:movies]
+
+      movie_index = 0
+      while  movie_index < movies_array.length do
+        result[director_name] += movies_array[movie_index][:worldwide_gross]
+        movie_index += 1
+      end
+
+      name_index += 1
+    end
+
+    result
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
   # each studio.
