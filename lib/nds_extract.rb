@@ -114,6 +114,7 @@ def movies_with_directors_set(source)
    name_index = 0
    while name_index < source.size do
      directors_name = source[name_index][:name]
+     binding.pry
      director_movies << directors_name
 
      title_index = 0
@@ -123,7 +124,7 @@ def movies_with_directors_set(source)
 
         #  if !director_movies[directors_name]
         #    director_movies[directors_name] = movie_title
-         # 
+         #
         #  else
         #    director_movies[directors_name] += movie_title
         #  end
