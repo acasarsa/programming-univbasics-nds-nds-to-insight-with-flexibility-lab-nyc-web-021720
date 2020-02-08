@@ -94,23 +94,7 @@ end
 # [{:title=>"Movie A", :studio=>"Alpha Films", :worldwide_gross=>10},
 #  {:title=>"Movie B", :studio=>"Alpha Films", :worldwide_gross=>30},
 #  {:title=>"Movie C", :studio=>"Omega Films", :worldwide_gross=>30}]
-  # name_index = 0
-  #   while name_index < collection.length do
-  #
-  #     director_name = collection[name_index][:name]
-  #     result[director_name] = 0 # accessing via key value pair. matched it with resuult and set variable in [] to equal 0 (for now)
-  #     movies_array = nds[name_index][:movies]
-  #
-  #     movie_index = 0
-  #     while  movie_index < movies_array.length do
-  #       result[director_name] += movies_array[movie_index][:worldwide_gross]
-  #       movie_index += 1
-  #     end
-  #
-  #     name_index += 1
-  #   end
-  #
-  #   result
+
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
   # each studio.
@@ -125,7 +109,7 @@ end
 
 
 def movies_with_directors_set(source)
-
+  binding.pry
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
   # INPUT:
