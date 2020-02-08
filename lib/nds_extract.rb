@@ -41,6 +41,8 @@ def movies_with_director_key(name, movies_collection)
     aoh << director_name
     movie_index += 1
   end
+
+  aoh
 end
    # adds :name key
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
