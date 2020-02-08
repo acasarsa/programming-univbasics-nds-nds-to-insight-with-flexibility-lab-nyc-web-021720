@@ -36,7 +36,6 @@ end
 def movies_with_director_key(name, movies_collection)
   # movies_collection => [{:title=>"TestA"}, {:title=>"TestB"}]
   # name => "Byron Poodle"
-  binding.pry
 
   aoh = []
   # movie_with_director_name(name, movies_collection)[]
