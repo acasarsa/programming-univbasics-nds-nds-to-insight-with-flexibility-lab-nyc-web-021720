@@ -121,6 +121,7 @@ def movies_with_directors_set(source)
 
          director_movies[directors_name] = movie_title
 
+         title_index += 1
        end
 
      name_index += 1
