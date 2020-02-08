@@ -34,11 +34,7 @@ end
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
-  # movies_collection => [{:title=>"TestA"}, {:title=>"TestB"}]
-  # name => "Byron Poodle"
-
   aoh = []
-  # movie_with_director_name(name, movies_collection)[]
 
   movie_index = 0
   while movie_index < movies_collection.length do
