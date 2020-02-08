@@ -109,7 +109,11 @@ end
 
 
 def movies_with_directors_set(source)
-  pp 
+  binding.pry
+   director_movies = []
+
+   source[]
+
 
 
 
