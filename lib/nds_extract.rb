@@ -112,12 +112,26 @@ def movies_with_directors_set(source)
    director_movies = []
 
    name_index = 0
-   director_movies[directors_name] = movie_title
-   directors_name = source[name_index][:name]
-
-   movie_title = source[name_index][:movies][title_index]
+   while name_index < source.size do
+     directors_name = source[name_index][:name]
 
 
+     name_index += 1
+   end
+
+    while title_index < source[name_index][:movies].size do
+      movie_title = source[name_index][:movies][title_index]
+
+      director_movies[directors_name] = movie_title
+      
+    end
+      
+    
+
+   
+   
+   director_movies
+end
 
 
   # GOAL: For each director, find their :movies Array and stick it in a new Array
@@ -130,7 +144,7 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
-end
+
 # AndE
 # => [{:name=>"Byron Poodle",etWithTheValueThatWasInName>)> source
 #   :movies=>[{:title=>"At the park"}, {:title=>"On the couch"}]},
