@@ -113,24 +113,24 @@ def movies_with_directors_set(source)
 
    name_index = 0
    while name_index < source.size do
-     directors_name = source[name_index][:name]
+    directors_name = source[name_index][:name]
 
 
-     name_index += 1
+    name_index += 1
    end
 
-    while title_index < source[name_index][:movies].size do
-      movie_title = source[name_index][:movies][title_index]
+      while title_index < source[name_index][:movies].size do
+        movie_title = source[name_index][:movies][title_index]
 
-      director_movies[directors_name] = movie_title
+        director_movies[directors_name] = movie_title
 
-    end
-
-
+      end
 
 
 
-   director_movies
+
+
+      director_movies
 end
 
 
