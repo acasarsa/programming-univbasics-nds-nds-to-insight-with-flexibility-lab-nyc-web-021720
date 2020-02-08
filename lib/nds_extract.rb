@@ -44,6 +44,7 @@ def movies_with_director_key(name, movies_collection)
   movie_index = 0
   while movie_index < movies_collection.length do
     current_movie = movies_collection[movie_index]
+    
     director_name = movie_with_director_name(name, current_movie)
     aoh << director_name
     movie_index += 1
