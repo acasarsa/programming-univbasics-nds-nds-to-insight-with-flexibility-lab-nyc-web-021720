@@ -89,7 +89,7 @@ def gross_per_studio(collection)
   totals
 end
   #
-# collection => 
+# collection =>
 # [{:title=>"Movie A", :studio=>"Alpha Films", :worldwide_gross=>10},
 #  {:title=>"Movie B", :studio=>"Alpha Films", :worldwide_gross=>30},
 #  {:title=>"Movie C", :studio=>"Omega Films", :worldwide_gross=>30}]
