@@ -123,10 +123,8 @@ def movies_with_directors_set(source)
            director_movies[directors_name] = movie_title
 
          else
-           director_movies[directors_name] << movie_title
+           director_movies[directors_name] += movie_title
          end
-
-
 
          title_index += 1
        end
