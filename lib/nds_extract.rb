@@ -112,7 +112,7 @@ def movies_with_directors_set(source)
    director_movies = []
 
    name_index = 0
-   director_movies[directors_name] =
+   director_movies[directors_name] = movie_title
    directors_name = source[name_index][:name]
 
    movie_title = source[name_index][:movies][title_index]
