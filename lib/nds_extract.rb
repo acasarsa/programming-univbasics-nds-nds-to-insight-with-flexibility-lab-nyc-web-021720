@@ -69,8 +69,14 @@ end
 
 
 def gross_per_studio(collection)
-  binding.pry
-  # result = {}
+  studios_totals = {}
+
+  studio_index = 0
+  while studio_index < collection.size do
+    current_studio = collection[studio_index][:studio]
+    studios_totals[current_studio] = 0
+    
+  end
   #
   # name_index = 0
   #   while name_index < collection.length do
