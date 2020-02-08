@@ -69,11 +69,12 @@ end
 
 
 def gross_per_studio(collection)
+  binding.pry
   # result = {}
   #
   # name_index = 0
   #   while name_index < collection.length do
-  # 
+  #
   #     director_name = collection[name_index][:name]
   #     result[director_name] = 0 # accessing via key value pair. matched it with resuult and set variable in [] to equal 0 (for now)
   #     movies_array = nds[name_index][:movies]
