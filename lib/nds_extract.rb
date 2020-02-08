@@ -48,7 +48,7 @@ def movies_with_director_key(name, movies_collection)
     aoh << director_name
     movie_index += 1
   end
-  
+
   aoh
 end
    # adds :name key
