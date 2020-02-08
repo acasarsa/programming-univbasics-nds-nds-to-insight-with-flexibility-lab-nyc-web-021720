@@ -37,7 +37,7 @@ def movies_with_director_key(name, movies_collection)
   aoh = []
   movie_index = 0
   while movie_index < movies_collection.length do
-    :director_name = movie_with_director_name(name)
+    director_name = movie_with_director_name(name)
     aoh << director_name
     movie_index += 1
   end
