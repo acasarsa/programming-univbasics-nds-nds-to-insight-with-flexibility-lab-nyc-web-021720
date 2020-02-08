@@ -109,10 +109,13 @@ end
 
 
 def movies_with_directors_set(source)
-  binding.pry
    director_movies = []
 
-   source[]
+   name_index = 0
+   director_movies[directors_name] =
+   directors_name = source[name_index][:name]
+
+   movie_title = source[name_index][:movies][title_index]
 
 
 
