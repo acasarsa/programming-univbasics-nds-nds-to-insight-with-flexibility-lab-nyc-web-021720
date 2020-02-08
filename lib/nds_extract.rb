@@ -28,6 +28,7 @@ def movie_with_director_name(director_name, movie_data)
     :studio => movie_data[:studio],
     :director_name => director_name
   }
+  binding.pry
 end
 
 
@@ -35,14 +36,16 @@ end
 
 def movies_with_director_key(name, movies_collection)
   aoh = []
-  movie_index = 0
-  while movie_index < movies_collection.length do
-    director_name = movie_with_director_name(name, movies_collection)
-    aoh << director_name
-    movie_index += 1
-  end
+  movie_with_director_name(name, movies_collection)[]
 
-  aoh
+  # movie_index = 0
+  # while movie_index < movies_collection.length do
+  #   director_name = movie_with_director_name(name, movies_collection)
+  #   aoh << director_name
+  #   movie_index += 1
+  # end
+  #
+  # aoh
 end
    # adds :name key
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
